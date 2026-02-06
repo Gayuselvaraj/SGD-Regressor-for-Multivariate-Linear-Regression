@@ -9,13 +9,16 @@ To write a program to predict the price of the house and number of occupants in 
 
 ## Algorithm
 
-1. Import Required Libraries  
-2. Load and Prepare the Dataset  
-3. Split the Data into Training and Testing Sets  
-4. Standardize the Input and Output Data  
-5. Train and Evaluate the Multi-Output Regression Model  
+1. Load California housing data, select features and targets, and split into training and testing sets.
 
 
+2.Scale both X (features) and Y (targets) using StandardScaler.
+
+
+3.Use SGDRegressor wrapped in MultiOutputRegressor to train on the scaled training data.
+
+
+4.Predict on test data, inverse transform the results, and calculate the mean squared error
 ## Program:
 ```
 
